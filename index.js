@@ -7,7 +7,7 @@ if (process.env.NODE_ENV !== "production") {
   // Load environment variables from .env file in non prod environments
   require("dotenv").config()
 }
-require("./utils/connectdb")
+require("./config/db")
 
 const app = express()
 
